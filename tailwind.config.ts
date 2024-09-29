@@ -13,7 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'dark-eclipse': '#101F40',
+      }
     },
+    variants: {
+      width: ["responsive", "hover", "focus"]
+    }
   },
   plugins: [],
 };

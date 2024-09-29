@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 body {
-  color: rgb(255, 255, 255);
-  background: rgb(22, 26, 60);
+  color: #A5C2FA;
+  background: #050C1C;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
