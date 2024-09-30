@@ -4,8 +4,20 @@ import rhythmixSnapshot from '@/public/images/rhythmix-snapshot.png';
 
 const Rhythmix = (): JSX.Element => {
   return (
-    <div className="rounded-2xl bg-dark-eclipse w-full h-50 flex flex-row p-4">
-      <div className="w-1/2 mr-10">
+    <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-6">
+
+      <div className="w-full flex lg:hidden items-center justify-center pb-4">
+        <a href="https://rhythm-ix.netlify.app/" target="_blank" rel="noreferrer noopener">
+          <Image
+            className="rounded-2xl hover:scale-105"
+            priority
+            src={rhythmixSnapshot}
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div className="w-full lg:w-1/2 lg:mr-10">
         <a className="flex items-center text-xl font-bold underline group"
           href="https://rhythm-ix.netlify.app/"
           target="_blank"
@@ -19,18 +31,19 @@ const Rhythmix = (): JSX.Element => {
           />
         </a>
 
-        <div className="text-xl mt-2">
-          〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰     
+        <div className="text-md mt-2">
         </div>
       </div>
 
-      <div className="w-1/2">
-        <Image
-          className="rounded-2xl"
-          priority
-          src={rhythmixSnapshot}
-          alt=""
-        />
+      <div className="w-1/2 hidden lg:flex items-center justify-center">
+        <a href="https://rhythm-ix.netlify.app/" target="_blank" rel="noreferrer noopener">
+          <Image
+            className="rounded-2xl hover:scale-105"
+            priority
+            src={rhythmixSnapshot}
+            alt=""
+          />
+        </a>
       </div>
     </div>
   );

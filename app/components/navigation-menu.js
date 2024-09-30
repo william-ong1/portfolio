@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const NavigationMenu = () => {
-  const sections = ['about', 'projects', 'education'];
+  const sections = ['about', 'experience', 'projects', 'education'];
   const [activeSection, setActiveSection] = useState('about');
 
   const handleScroll = () => {
@@ -14,7 +14,7 @@ const NavigationMenu = () => {
         const offsetTop = element.offsetTop;
         const height = element.offsetHeight;
 
-        if (scrollPos >= offsetTop - 48 && scrollPos < offsetTop + height) {
+        if (scrollPos >= offsetTop && scrollPos < offsetTop + height) {
           setActiveSection(section);
         }
       }
@@ -32,15 +32,19 @@ const NavigationMenu = () => {
   return (
     <nav className="uppercase flex-col gap-2 pt-6 hidden lg:flex">
       {sections.map((section) => (
-        <a
-          href={`#${section}`}
-          className={`text-lg ${
-            activeSection === section ? '' : 'text-gray-700'
-          } flex flex-row items-center gap-3 group`}
-        >
-          <div className={`${ activeSection === section ? 'w-16' : 'w-8'} h-0.5 flex bg-white transition-width duration-300 group-hover:w-16`}> </div>
-          {section}
-        </a>
+        <div key={section} className="flex items-center gap-3">
+          <a
+            href={`#${section}`}
+            className={`text-lg ${
+              activeSection === section ? '' : 'text-gray-700'
+            } group`}
+          >
+            <div className="flex flex-row gap-2 items-center">
+              <div className={`${ activeSection === section ? 'w-16' : 'w-8'} h-0.5 flex bg-white transition-width duration-300 group-hover:w-16`}> </div>
+              {section}
+            </div>
+          </a>
+        </div>
       ))}
     </nav>
   );
