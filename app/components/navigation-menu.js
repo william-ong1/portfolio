@@ -27,7 +27,7 @@ const NavigationMenu = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [sections]);
 
   return (
     <nav className="uppercase flex-col gap-2 pt-6 hidden lg:flex">
