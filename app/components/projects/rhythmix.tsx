@@ -33,7 +33,7 @@ const Rhythmix = (): JSX.Element => {
         </a>
 
         <ul className="list-disc text-sm pl-3 flex flex-col gap-1 pt-4"> 
-          <li> Enhances a user's Spotify listening experience with both generalized and personalized music recommendations, seamlessly integrated with Spotify's API </li>
+          <li> Enhances a user&apos;s Spotify listening experience with both generalized and personalized music recommendations, seamlessly integrated with Spotify&apos;s API </li>
           <li> Users can craft a personalized playlist by choosing from 126 genres and modifying up to 14 unique attributes </li>
           <li> Integrated song search functionality with React Bootstrap and Spotify API for users to search for their favorite songs, add them to a pool, and generate tailored recommendations </li>
         </ul>

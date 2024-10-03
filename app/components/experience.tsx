@@ -29,7 +29,7 @@ const Experience = (): JSX.Element => {
           </div>
 
           <ul className="list-disc text-sm not-italic pl-3 flex flex-col gap-1 pt-1"> 
-            <li> Implemented a recommendation playlist for 10 genres that refreshes every 24 hours using MongoDB, Spotify API, Netlify's serverless functions, and cron jobs</li>
+            <li> Implemented a recommendation playlist for 10 genres that refreshes every 24 hours using MongoDB, Spotify API, Netlify&apos;s serverless functions, and cron jobs</li>
             <li> Designed and implemented a responsive and intuitive user interface with Figma designs and CSS media queries </li>
             <li> Led a team of 6 members, overseeing project development from conception to delivery, ensuring adherence to deadlines and product specifications </li>
             <li> Improved team workflows and productivity through effective task delegation and facilitation of regular meetings </li>
