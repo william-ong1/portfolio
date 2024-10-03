@@ -7,7 +7,7 @@ const InsightArchives = (): JSX.Element => {
     <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-6">
 
       <div className="w-full flex lg:hidden items-center justify-center pb-4">
-        <a href="https://insight-archives.netlify.app/" target="_blank" rel="noreferrer noopener">
+        <a href="https://insightarchives.live" target="_blank" rel="noreferrer noopener">
           <Image
             className="rounded-2xl hover:scale-105"
             priority
@@ -17,9 +17,10 @@ const InsightArchives = (): JSX.Element => {
         </a>
       </div>
 
-      <div className="w-full lg:w-1/2 mr-4">
+      <div className="w-full lg:w-7/12 mr-5">
+      {/* <div className="w-full mr-4"> */}
         <a className="flex items-center text-xl font-bold underline group"
-          href="https://insight-archives.netlify.app/"
+          href="https://insightarchives.live"
           target="_blank"
           rel="noreferrer noopener">
           Insight Archives
@@ -32,15 +33,15 @@ const InsightArchives = (): JSX.Element => {
         </a>
 
         <ul className="list-disc text-sm pl-3 flex flex-col gap-1 pt-4"> 
-          <li> Features daily quotes to inspire users and provide insights, invoking reflection </li>
-          <li> Subscription feature for users to receive daily quotes in their inboxes </li>
-          <li> Calendar-based archive system for users to view past quotes </li>
-          <li> Uses Netlify Serverless Functions, Gemini API, and MongoDB </li>
+          <li> Features daily updated quotes retrieved from Gemini API to inspire users and promote personal reflection </li>
+          <li> Subscription feature via Brevo API and MongoDB for users to recieve the daily quote directly in their inboxes </li>
+          <li> Calendar-based archive system for users to effortlessly browse and access past quotes </li>
+          <li> Automated quote updates with Netlify's serverless functions, Gemini API, Octokit, and cron jobs </li>
         </ul>
       </div>
 
-      <div className="w-1/2 hidden lg:flex items-center justify-center">
-        <a href="https://insight-archives.netlify.app/" target="_blank" rel="noreferrer noopener">
+      <div className="w-5/12 hidden lg:flex items-center justify-center">
+        <a href="https://insightarchives.live" target="_blank" rel="noreferrer noopener">
           <Image
             className="rounded-2xl hover:scale-105"
             priority

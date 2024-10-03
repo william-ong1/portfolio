@@ -29,10 +29,11 @@ const Experience = (): JSX.Element => {
           </div>
 
           <ul className="list-disc text-sm not-italic pl-3 flex flex-col gap-1 pt-1"> 
+            <li> Implemented a recommendation playlist for 10 genres that refreshes every 24 hours using MongoDB, Spotify API, Netlify's serverless functions, and cron jobs</li>
+            <li> Designed and implemented a responsive and intuitive user interface with Figma designs and CSS media queries </li>
             <li> Led a team of 6 members, overseeing project development from conception to delivery, ensuring adherence to deadlines and product specifications </li>
-            <li> Delegated tasks and facilitated regular meetings to enhance collaboration and streamline workflows </li>
-            <li> Utilized a comprehensive tech stack to implement features and solve problems </li>
-            <li> For more details, check out the <a className="text-white underline" href="#projects"> rhythmix</a> project </li>
+            <li> Improved team workflows and productivity through effective task delegation and facilitation of regular meetings </li>
+            <li> For more details, check out the <a className="text-white underline" href="#rhythmix"> rhythmix</a> project </li>
           </ul>
         </div>
       </div>

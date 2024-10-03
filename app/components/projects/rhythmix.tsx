@@ -17,7 +17,8 @@ const Rhythmix = (): JSX.Element => {
         </a>
       </div>
 
-      <div className="w-full lg:w-1/2 lg:mr-10">
+      <div className="w-full lg:w-7/12 lg:mr-5">
+      {/* <div className="w-full lg:mr-10"> */}
         <a className="flex items-center text-xl font-bold underline group"
           href="https://rhythm-ix.netlify.app/"
           target="_blank"
@@ -31,14 +32,17 @@ const Rhythmix = (): JSX.Element => {
           />
         </a>
 
-        <div className="text-md mt-2">
-        </div>
+        <ul className="list-disc text-sm pl-3 flex flex-col gap-1 pt-4"> 
+          <li> Enhances a user's Spotify listening experience with both generalized and personalized music recommendations, seamlessly integrated with Spotify's API </li>
+          <li> Users can craft a personalized playlist by choosing from 126 genres and modifying up to 14 unique attributes </li>
+          <li> Integrated song search functionality with React Bootstrap and Spotify API for users to search for their favorite songs, add them to a pool, and generate tailored recommendations </li>
+        </ul>
       </div>
 
-      <div className="w-1/2 hidden lg:flex items-center justify-center">
+      <div className="w-5/12 hidden lg:flex items-center justify-center">
         <a href="https://rhythm-ix.netlify.app/" target="_blank" rel="noreferrer noopener">
           <Image
-            className="rounded-2xl hover:scale-105"
+            className="rounded-2xl hover:scale-105 w-full"
             priority
             src={rhythmixSnapshot}
             alt=""
