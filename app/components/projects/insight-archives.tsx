@@ -34,7 +34,7 @@ const InsightArchives = (): JSX.Element => {
 
         <ul className="list-disc text-sm pl-3 flex flex-col gap-1 pt-4"> 
           <li> Features daily updated quotes retrieved from Gemini API to inspire users and promote personal reflection </li>
-          <li> Subscription feature via Brevo API and MongoDB for users to recieve the daily quote directly in their inboxes </li>
+          <li> Subscription feature via SendGrid API and MongoDB for users to recieve the daily quote directly in their inboxes </li>
           <li> Calendar-based archive system for users to effortlessly browse and access past quotes </li>
           <li> Automated quote updates with Netlify&apos;s serverless functions, Gemini API, Octokit, and cron jobs </li>
         </ul>

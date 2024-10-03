@@ -21,7 +21,7 @@ const Experience = (): JSX.Element => {
           </div>
 
           <div className="flex text-md italic flex-row"> 
-            Full Stack Developer & Team Manager
+            Full Stack Developer & Team Lead
           </div>
 
           <div className="text-sm italic">
