@@ -6,13 +6,13 @@ const Experience = (): JSX.Element => {
     <div className="flex flex-col gap-6 pt-8 lg:pt-20">
       <div className="text-2xl font-bold mt-1 uppercase"> Experience </div>
 
-      <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-6">
+      <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-5">
         <div className="w-full flex flex-col">
           <div className="text-lg font-bold flex flex-row relative">
             <div> Husky Coding Project </div>
             <a href="https://hcp-uw.com/" target="_blank" rel="noreferrer noopener">
               <Image
-                className="absolute right-0 rounded-2xl hover:scale-105 mt-1 w-14 h-5 lg:w-20 lg:h-6"
+                className="absolute right-0 rounded-2xl mt-1 w-14 h-5 lg:w-20 lg:h-6 transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out"
                 priority
                 src={HCPLogo}
                 alt=""

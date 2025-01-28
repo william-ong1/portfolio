@@ -9,7 +9,7 @@ const Socials = (): JSX.Element => {
     <div className="flex flex-row gap-2 py-8" aria-label="socials">
       <a href="https://github.com/william-ong1" target="_blank" rel="noreferrer noopener">
         <Image
-          className="hover:scale-125"
+          className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
           src={githubIcon}
           height={32}
@@ -20,7 +20,7 @@ const Socials = (): JSX.Element => {
 
       <a href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">
         <Image 
-          className="hover:scale-125"
+          className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
           src={linkedinIcon}
           height={32}
@@ -31,7 +31,7 @@ const Socials = (): JSX.Element => {
 
       <a href="/resume.pdf" target="_blank" rel="noreferrer noopener">
         <Image
-          className="hover:scale-125"
+          className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
           src={resumeIcon}
           height={32}
@@ -42,7 +42,7 @@ const Socials = (): JSX.Element => {
 
       <a href="mailto:williamong.dev@gmail.com" target="_blank" rel="noreferrer noopener">
         <Image
-          className="hover:scale-125"
+          className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
           src={emailIcon}
           height={32}

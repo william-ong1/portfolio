@@ -9,7 +9,7 @@ const Rhythmix = (): JSX.Element => {
       <div className="w-full flex lg:hidden items-center justify-center pb-4">
         <a href="https://rhythm-ix.netlify.app/" target="_blank" rel="noreferrer noopener">
           <Image
-            className="rounded-2xl hover:scale-105"
+            className="rounded-2xl transform transition-all duration-300 ease-out hover:shadow-md hover:shadow-[#bbcced]"
             priority
             src={rhythmixSnapshot}
             alt=""
@@ -39,10 +39,10 @@ const Rhythmix = (): JSX.Element => {
           </ul>
       </div>
 
-      <div className="w-5/12 lg:w-6/12 hidden lg:flex items-center justify-center pt-9">
+      <div className="w-5/12 lg:w-6/12 hidden lg:flex items-center justify-center pt-8 lg:-ml-3.5">
         <a href="https://rhythm-ix.netlify.app/" target="_blank" rel="noreferrer noopener">
           <Image
-            className="rounded-2xl hover:scale-105 w-full"
+            className="rounded-2xl transform transition-all duration-300 ease-out hover:shadow-md hover:shadow-[#bbcced]"
             priority
             src={rhythmixSnapshot}
             alt=""
