@@ -35,7 +35,7 @@ const Rhythmix = (): JSX.Element => {
         <ul className="list-disc text-xs pl-3 flex flex-col gap-1.5 pt-4"> 
           <li> Elevates a user&apos;s Spotify experience with fully-customizable music recommendations </li>
           <li> Create personalized playlists with up to 126 genres and 14 unique attributes </li>
-          <li> Note: Spotify revoked access to key Web API endpoints, disabling many Rythmix features. Here&apos;s a past <a className="text-white underline" href="https://youtu.be/LjRbrwCBr7U" target="_blank" rel="noreferrer noopener"> demo</a> &#58;&#41; </li>
+          <li> Note: Spotify revoked access to key Web API endpoints, disabling many Rhythmix features. Here&apos;s a past <a className="text-white underline" href="https://youtu.be/LjRbrwCBr7U" target="_blank" rel="noreferrer noopener"> demo</a> &#58;&#41; </li>
           </ul>
       </div>
 
