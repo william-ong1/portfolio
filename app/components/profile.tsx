@@ -4,13 +4,13 @@ import NavigationMenu from "./navigation-menu";
 const Profile = (): JSX.Element => {
   return (
     <div>
-      <h1 id="profile" className="text-4xl font-bold tracking-tight sm:text-5xl"> William Ong </h1>
+      <h1 id="profile" className="text-5xl font-bold tracking-tight "> William Ong </h1>
 
-      <div className="text-base ml-1 mt-2">
+      <div className="text-sm ml-1 mt-1">
         Software Developer
       </div>
 
-      <NavigationMenu />
+      <NavigationMenu  />
       <Socials />
     </div>
   );

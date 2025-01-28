@@ -4,7 +4,7 @@ import insightArchivesSnapshot from '@/public/images/insight-archives-snapshot.p
 
 const InsightArchives = (): JSX.Element => {
   return (
-    <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-6">
+    <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-5">
 
       <div className="w-full flex lg:hidden items-center justify-center pb-4">
         <a href="https://insightarchives.live" target="_blank" rel="noreferrer noopener">
@@ -19,7 +19,7 @@ const InsightArchives = (): JSX.Element => {
 
       <div className="w-full lg:w-7/12 mr-5">
       {/* <div className="w-full mr-4"> */}
-        <a className="flex items-center text-xl font-bold underline group"
+        <a className="flex items-center text-lg font-bold underline group"
           href="https://insightarchives.live"
           target="_blank"
           rel="noreferrer noopener">
@@ -32,15 +32,15 @@ const InsightArchives = (): JSX.Element => {
           />
         </a>
 
-        <ul className="list-disc text-sm pl-3 flex flex-col gap-1 pt-4"> 
-          <li> Features daily updated quotes retrieved from Gemini API to inspire users and promote personal reflection </li>
-          <li> Subscription feature via SendGrid API and MongoDB for users to recieve the daily quote directly in their inboxes </li>
-          <li> Calendar-based archive system for users to effortlessly browse and access past quotes </li>
-          <li> Automated quote updates with Netlify&apos;s serverless functions, Gemini API, Octokit, and cron jobs </li>
+        <ul className="list-disc text-xs pl-3 flex flex-col gap-1.5 pt-4"> 
+          <li> Daily updated quotes to provide inspiration and promote personal reflection </li>
+          <li> Calendar-based archive system to easily browse and access past quotes </li>
+          <li> Subscription feature via SendGrid API and MongoDB to send daily quotes to inboxes</li>
+          <li> Automated quote updates with Netlify, Gemini API, Octokit, and cron jobs </li>
         </ul>
       </div>
 
-      <div className="w-5/12 hidden lg:flex items-center justify-center">
+      <div className="w-5/12 lg:w-6/12 hidden lg:flex items-center justify-center pt-12">
         <a href="https://insightarchives.live" target="_blank" rel="noreferrer noopener">
           <Image
             className="rounded-2xl hover:scale-105"

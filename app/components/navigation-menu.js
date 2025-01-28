@@ -30,12 +30,12 @@ const NavigationMenu = () => {
   }, [sections]);
 
   return (
-    <nav className="uppercase flex-col gap-2 pt-6 hidden lg:flex">
+    <nav className="uppercase flex-col gap-2 pt-6 hidden lg:flex ml-1">
       {sections.map((section) => (
         <div key={section} className="flex items-center gap-3">
           <a
             href={`#${section}`}
-            className={`text-lg ${
+            className={`text-md ${
               activeSection === section ? '' : 'text-gray-700'
             } group`}
           >

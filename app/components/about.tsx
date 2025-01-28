@@ -3,17 +3,17 @@ const About = (): JSX.Element => {
     <div>
       <div className="text-2xl font-bold mt-1 uppercase pt-8 lg:pt-20"> About </div>
 
-      <div className="text-md mt-4 leading-7">
-        Hello! I&#39;m currently a computer science student at the University of Washington. Inspired by the endless possibilities in web development and technology, 
-        I&#39;m a full stack developer passionate about building websites and applications that elevate lives and user experiences.
-        Whether I&#39;m working on the front end or back end, I immensely enjoy the art of problem-solving and turning imaginations into realities.
+      <div className="text-sm mt-4 leading-6">
+        Hi! I&#39;m a computer science student at the University of Washington. Driven by the endless potential in software development and technology, 
+        I&#39;m passionate about building applications that solve real-world problems and making a difference. Whether I&#39;m coding, designing, or brainstorming new ideas,
+        I thrive on the challenge of problem-solving and love turning imaginations into realities.
       </div>
 
-      <div className="text-md mt-4 leading-7">
-        When I&#39;m not coding, you might find me training for the upcoming Dawg Dash, capturing the scenery of the Pacific Northwest, listening to new music, trying new restaurants, or working out.
+      <div className="text-sm mt-4 leading-6">
+        When I&#39;m not coding, you might find me at the gym, trying new restaurants, car spotting, searching for new music, shopping, or capturing the scenery of the PNW.
       </div>
 
-      <div className="text-md mt-4 leading-7">
+      <div className="text-sm mt-4 leading-6">
         I&#39;m always eager to learn and explore new opportunities, striving to grow both as a developer and as an individual. Let&#39;s <a className="text-white underline" href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">connect</a> and do something special together!
       </div>
     </div>
