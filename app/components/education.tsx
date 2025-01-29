@@ -8,9 +8,9 @@ const Education = (): JSX.Element => {
       <div className="text-2xl font-bold mt-1 uppercase"> Education </div>
 
       <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-5">
-        <div className="w-full flex lg:hidden">
+        <div className="w-full flex lg:hidden justify-center items-center">
           <Image
-            className="rounded-2xl h-full w-full p-4 pb-8"
+            className="rounded-2xl h-3/4 w-3/4 p-4"
             priority
             src={UWLogo}
             alt=""
@@ -46,9 +46,9 @@ const Education = (): JSX.Element => {
       </div>
 
       <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-5">
-        <div className="w-full flex lg:hidden">
+        <div className="w-full flex lg:hidden justify-center items-center">
           <Image
-            className="rounded-2xl h-full w-full p-4 pb-8"
+            className="rounded-2xl h-3/4 w-3/4 p-4"
             priority
             src={CCLogo}
             alt=""
@@ -69,7 +69,7 @@ const Education = (): JSX.Element => {
             <p> GPA: 3.92/4.0 </p>
             <br/>
             <p className="font-bold"> Relevant Coursework: </p>
-            <p> Object-Oriented Programming, Programming Tools, Computational Theory </p>
+            <p> Object-Oriented Programming, Programming Tools, Theory of Computation </p>
           </div>
         </div>
 

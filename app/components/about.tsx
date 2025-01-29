@@ -1,7 +1,7 @@
 const About = (): JSX.Element => {
   return (
     <div>
-      <div className="text-2xl font-bold mt-1 uppercase pt-8 lg:pt-20"> About </div>
+      <div className="text-2xl font-bold mt-1 uppercase pt-4 lg:pt-20"> About </div>
 
       <div className="text-sm mt-4 leading-6">
         Hi! I&#39;m a computer science student at the University of Washington. Driven by the endless potential in software development and technology, 
@@ -10,7 +10,7 @@ const About = (): JSX.Element => {
       </div>
 
       <div className="text-sm mt-4 leading-6">
-        When I&#39;m not coding, you might find me at the gym, trying new restaurants, car spotting, searching for new music, shopping, or capturing the scenery of the PNW.
+        When I&#39;m not coding, you might find me at the gym, trying new restaurants, car spotting, searching for new music, or capturing the scenery of the PNW.
       </div>
 
       <div className="text-sm mt-4 leading-6">
