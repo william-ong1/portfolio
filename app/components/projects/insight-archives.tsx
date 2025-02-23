@@ -35,7 +35,7 @@ const InsightArchives = (): JSX.Element => {
         <ul className="list-disc text-xs pl-3 flex flex-col gap-1.5 pt-4"> 
           <li> Daily updated quotes to provide inspiration and promote personal reflection </li>
           <li> Calendar-based archive system to easily browse and access past quotes </li>
-          <li> Subscription feature via SendGrid API and MongoDB to send daily quotes to inboxes</li>
+          <li> Subscription feature via SendGrid API and MongoDB to send quotes to inboxes </li>
           <li> Automated quote updates with Netlify, <br/> Gemini API, Octokit, and cron jobs </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@ const InsightArchives = (): JSX.Element => {
       <div className="w-5/12 lg:w-6/12 hidden lg:flex items-center justify-center pt-8 lg:-ml-3.5">
         <a href="https://insightarchives.live" target="_blank" rel="noreferrer noopener">
           <Image
-            className="rounded-2xl transform transition-all duration-300 ease-out hover:shadow-md hover:shadow-[#bbcced]"
+            className="rounded-lg transform transition-all duration-300 ease-out hover:shadow-md hover:shadow-[#bbcced]"
             // className="rounded-2xl transform transition-all duration-300 ease-out hover:shadow-[0_4px_8px_#bbcced,0_0_15px_#bbcced] hover:shadow-lg"
             priority
             src={insightArchivesSnapshot}
