@@ -10,11 +10,11 @@ const About = (): JSX.Element => {
       </div>
 
       <div className="text-sm mt-4 leading-6">
-        When I&#39;m not coding, I enjoy working out, playing basketball, trying new restaurants, car spotting, and capturing the scenery of the Pacific Northwest.
+        When I&#39;m not coding, I enjoy working out, playing basketball, trying new restaurants, car spotting, and taking photos of sunsets (and sunrises).
       </div>
 
       <div className="text-sm mt-4 leading-6">
-        I&#39;m always eager to learn and explore new opportunities, striving to grow both as a developer and as an individual. Let&#39;s <a className="text-white underline" href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">connect</a> and do something special together!
+        I&#39;m always eager to learn and explore new opportunities, striving to grow both as a developer and as a person. Let&#39;s <a className="text-white underline" href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">connect</a> and do something special together!
       </div>
     </div>
   );
