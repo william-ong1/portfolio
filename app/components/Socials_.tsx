@@ -1,8 +1,4 @@
 import Image from "next/image";
-import githubIcon from "@/public/images/github.svg";
-import linkedinIcon from "@/public/images/linkedin.svg";
-import resumeIcon from "@/public/images/resume.svg";
-import emailIcon from '@/public/images/email.svg';
 
 const Socials = (): JSX.Element => {
   return (
@@ -11,10 +7,11 @@ const Socials = (): JSX.Element => {
         <Image
           className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
-          src={githubIcon}
+          src="/icons/github.svg"
           height={32}
           width={32}
-          alt="github"
+          draggable={false}
+          alt="GitHub"
         />
       </a>
 
@@ -22,10 +19,11 @@ const Socials = (): JSX.Element => {
         <Image 
           className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
-          src={linkedinIcon}
+          src="/icons/linkedin.svg"
           height={32}
           width={32}
-          alt="linkedin"
+          draggable={false}
+          alt="LinkedIn"
         />
       </a>
 
@@ -33,10 +31,11 @@ const Socials = (): JSX.Element => {
         <Image
           className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
-          src={resumeIcon}
+          src="/icons/resume.svg"
           height={32}
           width={32}
-          alt="resume"
+          draggable={false}
+          alt="Resume"
         />
       </a>
 
@@ -44,10 +43,11 @@ const Socials = (): JSX.Element => {
         <Image
           className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"
           priority
-          src={emailIcon}
+          src="/icons/email.svg"
           height={32}
           width={32}
-          alt="email"
+          draggable={false}
+          alt="Email"
         />
       </a>
     </div>

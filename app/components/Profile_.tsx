@@ -1,4 +1,4 @@
-import Socials from "./socials";
+import Socials from "./Socials_";
 import NavigationMenu from "./navigation-menu";
 
 const Profile = (): JSX.Element => {

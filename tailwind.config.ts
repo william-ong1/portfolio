@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,14 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        'dark-eclipse': '#101F40',
-      }
+        'light-blue': "#bbcced",
+        'dark-navy': "#0b101e",
+      },
+      fontFamily: {
+        raleway: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+      },
     },
     variants: {
       width: ["responsive", "hover", "focus"]

@@ -1,14 +1,14 @@
-import About from "./components/about";
-import Experience from "./components/experience";
-import Projects from "./components/projects/projects";
-import Education from "./components/education";
-import Profile from "./components/profile";
-import Footer from "./components/footer";
+import About from "./components/About_";
+import Experience from "./components/Experience_";
+import Projects from "./components/projects/Projects_";
+import Education from "./components/education/Education";
+import Profile from "./components/Profile_";
+import Footer from "./components/Footer_";
 
 export default function Home() {
   return (
-    <main>
-      <div className="mx-auto h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-32 lg:py-0 fade-in">
+    <main className="overflow-x-hidden">
+      <div className="mx-auto max-w-screen-xl h-screen px-4 py-12 md:px-12 md:py-20 lg:px-32 lg:py-0 fade-in font-raleway">
         <div className="lg:flex lg:justify-between lg:gap-16">
 
           <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-5/12 lg:flex-col lg:justify-between lg:py-20">
