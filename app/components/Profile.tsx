@@ -1,5 +1,5 @@
-import Socials from "./Socials_";
-import NavigationMenu from "./navigation-menu";
+import Socials from "./Socials";
+import NavigationMenu from "./NavigationMenu";
 
 const Profile = (): JSX.Element => {
   return (

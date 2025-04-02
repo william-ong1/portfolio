@@ -1,9 +1,9 @@
-import About from "./components/About_";
-import Experience from "./components/Experience_";
-import Projects from "./components/projects/Projects_";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/projects/Projects";
 import Education from "./components/education/Education";
-import Profile from "./components/Profile_";
-import Footer from "./components/Footer_";
+import Profile from "./components/Profile";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
