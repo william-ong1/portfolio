@@ -1,7 +1,13 @@
+"use client"
+
 import ProjectCard from "./ProjectCard";
 import AnimateOnScroll from '../AnimateOnScroll';
+import { useState, useEffect } from 'react';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Projects = (): JSX.Element => {
+  const [showImages, setShowImages] = useState<boolean>(true);
+
   const projects = [
     {
       title: "What's That Car?",
@@ -28,13 +34,22 @@ const Projects = (): JSX.Element => {
 
   return (
     <AnimateOnScroll className="flex flex-col gap-6 w-full">
-      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-[5.25rem]"> Projects </div>
+      <div className="flex items-center gap-2 pt-10 mt-1 lg:pt-[5.25rem]">
+        <div className="text-2xl font-bold uppercase"> Projects </div>
+        <button 
+          onClick={() => setShowImages(!showImages)}
+          className="text-gray-400 hover:text-light-blue transition-colors mt-1"
+          aria-label={showImages ? "Hide project images" : "Show project images"}
+        >
+          {showImages ? <FaEye size={16} /> : <FaEyeSlash size={16} />}
+        </button>
+      </div>
       {projects.map((project, index) => (
         <AnimateOnScroll 
           key={project.title} 
           delay={index * 100}
         >
-          <ProjectCard {...project} />
+          <ProjectCard {...project} showImage={showImages} />
         </AnimateOnScroll>
       ))}
     </AnimateOnScroll>

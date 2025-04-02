@@ -23,7 +23,7 @@ const Education = (): JSX.Element => {
 
   return (
     <AnimateOnScroll className="flex flex-col gap-6 w-full">
-      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-[5.25rem]"> Education </div>
+      <div className="text-2xl font-bold uppercase pt-10 mt-1 lg:pt-[5.25rem]"> Education </div>
       {educationData.map((education, index) => (
         <AnimateOnScroll 
           key={education.school} 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Socials = (): JSX.Element => {
   return (
-    <div className="flex flex-row gap-2 py-8" aria-label="socials">
+    <div className="flex flex-row gap-2 py-4 lg:py-8" aria-label="socials">
       <a href="https://github.com/william-ong1" target="_blank" rel="noreferrer noopener">
         <Image
           className="transition-transform transform hover:scale-110 hover:shadow-lg duration-300 ease-in-out"

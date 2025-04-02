@@ -29,7 +29,7 @@ const Experience = (): JSX.Element => {
 
   return (
     <AnimateOnScroll className="flex flex-col gap-6 w-full">
-      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-[5.25rem]"> Experience </div>
+      <div className="text-2xl font-bold uppercase pt-10 mt-1 lg:pt-[5.25rem]"> Experience </div>
       {experiences.map((experience, index) => (
         <AnimateOnScroll 
           key={experience.role} 
