@@ -13,14 +13,14 @@ interface EducationCardProps {
 
 const EducationCard = ({ school, degree, dates, gpa, coursework, logo }: EducationCardProps): JSX.Element => {
   return (
-      <div className="bg-gradient-to-b from-[#030712]/95 to-[#030712]/95 p-5 rounded-lg border border-white/5 shadow-inner shadow-light-blue/5 transition-all duration-300 hover:scale-[1.001]">
+      <div className="bg-gradient-to-b from-[#030712]/95 to-[#030712]/95 p-5 rounded-lg shadow-inner shadow-light-blue/5 transition-all duration-300 hover:scale-[1.00]">
         {/* School with Logo */}
         <div className="flex items-center justify-between">
           <div className="flex flex-col">
-            <h3 className="text-base font-bold text-light-blue">
+            <h3 className="text-base font-extrabold text-light-blue">
               {school}
             </h3>
-            <p className="text-sm font-bold text-white">
+            <p className="text-sm font-semibold text-white">
               {degree}
             </p>
           </div>

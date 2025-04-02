@@ -22,19 +22,17 @@ const Education = (): JSX.Element => {
   ];
 
   return (
-    <>
-      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-20">Education</div>
-      <AnimateOnScroll className="flex flex-col gap-6 pt-4 w-full">
-        {educationData.map((education, index) => (
-          <AnimateOnScroll 
-            key={education.school} 
-            delay={index * 150}
-          >
-            <EducationCard {...education} />
-          </AnimateOnScroll>
-        ))}
-      </AnimateOnScroll>
-    </>
+    <AnimateOnScroll className="flex flex-col gap-6 w-full">
+      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-[5.25rem]"> Education </div>
+      {educationData.map((education, index) => (
+        <AnimateOnScroll 
+          key={education.school} 
+          delay={index * 100}
+        >
+          <EducationCard {...education} />
+        </AnimateOnScroll>
+      ))}
+    </AnimateOnScroll>
   );
 };
 

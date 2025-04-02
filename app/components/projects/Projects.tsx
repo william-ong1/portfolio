@@ -27,19 +27,17 @@ const Projects = (): JSX.Element => {
   ];
 
   return (
-    <>
-      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-20">Projects</div>
-      <AnimateOnScroll className="flex flex-col gap-8 pt-6 w-full">
-        {projects.map((project, index) => (
-          <AnimateOnScroll 
-            key={project.title} 
-            delay={index * 150}
-          >
-            <ProjectCard {...project} />
-          </AnimateOnScroll>
-        ))}
-      </AnimateOnScroll>
-    </>
+    <AnimateOnScroll className="flex flex-col gap-6 w-full">
+      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-[5.25rem]"> Projects </div>
+      {projects.map((project, index) => (
+        <AnimateOnScroll 
+          key={project.title} 
+          delay={index * 100}
+        >
+          <ProjectCard {...project} />
+        </AnimateOnScroll>
+      ))}
+    </AnimateOnScroll>
   );
 };
 

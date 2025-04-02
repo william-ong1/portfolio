@@ -12,13 +12,13 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, link, techStack }: ProjectCardProps): JSX.Element => {
   return (
-    <div className="w-full rounded-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-md hover:shadow-light-blue/10 group">
+    <div className="w-full rounded-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-md hover:shadow-light-blue/10 group ">
 
       {/* Image preview */}
-      <div className="relative w-full  cursor-pointer">
+      <div className="relative w-full aspect-video cursor-pointer">
         <Image
           onClick={() => window.open(link, '_blank', 'noopener,noreferrer')}
-          className="w-full h-full"
+          className="w-full h-full rounded-t-lg"
           priority
           src={image}
           alt={title}
