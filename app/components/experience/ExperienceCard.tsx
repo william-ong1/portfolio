@@ -59,7 +59,7 @@ const ExperienceCard = ({ role, company, dates, description, logo, link }: Exper
       
       {/* Responsibilities */}
       <div className="mt-2">
-        <ul className="list-disc text-xs text-gray-300 pl-4 space-y-2">
+        <ul className="list-disc text-xs text-gray-300 pl-[0.98rem] space-y-2">
           {description.map((item, index) => (
             <li key={index}>{item}</li>
           ))}

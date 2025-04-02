@@ -13,12 +13,14 @@ const About = (): JSX.Element => {
         </div>
 
         <div className="text-sm mt-4">
-          In my free time, I enjoy working out, playing basketball, and just staying active. You might also find me car spotting, trying new restaurants, taking photos of sunsets (and sunrises), and reading books to inspire new ideas.
+          In my free time, I enjoy working out, playing basketball, and staying active. You might also find me car spotting, trying new restaurants, taking photos of sunsets (and sunrises), and reading to inspire new ideas.
         </div>
 
         <div className="text-sm mt-4">
            I&#39;m always eager to learn, embrace new challenges, and grow both as a developer and as a person.
-          Connect with me <a className="text-white underline" href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">here</a>, and let&#39;s collaborate on something special!
+           Connect with me <a className="text-white underline" href="https://www.linkedin.com/in/william-ong1" target="_blank" rel="noreferrer noopener">here</a>, and thank you for reading!
+          
+          {/* Thanks for reading! */}
         </div>
 
       </div>
