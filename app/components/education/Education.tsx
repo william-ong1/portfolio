@@ -1,7 +1,5 @@
 import AnimateOnScroll from '../AnimateOnScroll';
 import EducationCard from './EducationCard';
-import UWLogo from '@/public/icons/uw.svg';
-import CCLogo from '@/public/icons/clark-college.png';
 
 const Education = (): JSX.Element => {
   const educationData = [
@@ -9,23 +7,23 @@ const Education = (): JSX.Element => {
       school: "University of Washington",
       degree: "BS in Computer Science",
       dates: "Graduating in December 2025",
-      gpa: "GPA: 3.8/4.0",
-      coursework: "Machine Learning, Algorithms, Software Design, Data Structures & Parallelism, Data Management, Systems Programming",
-      logo: UWLogo
+      gpa: "GPA: 3.82 / 4.0",
+      coursework: "Algorithms, Artificial Intelligence, Autonomous Robotics, Data Management, Data Structures \& Parallelism, Machine Learning, Software Design, Systems Programming",
+      logo: "/icons/uw.svg",
     },
     {
       school: "Clark College",
-      degree: "Associate of Science",
-      dates: "Graduated in June 2023",
-      gpa: "GPA: 3.9/4.0",
-      coursework: "Computer Science I & II, Calculus I & II, Physics I & II, Chemistry I & II",
-      logo: CCLogo
+      degree: "AST in Computer Science",
+      dates: "Graduated in August 2023",
+      gpa: "GPA: 3.92 / 4.0",
+      coursework: "C Programming, Data Structures & Object-Oriented Programming, Digital Logic Design, Discrete Structures, Programming Tools (debuggers / profilers / scripting)",
+      logo: "/icons/clark-college.png"
     }
   ];
 
   return (
     <>
-      <div className="text-2xl font-bold uppercase pt-8 lg:pt-20">Education</div>
+      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-20">Education</div>
       <AnimateOnScroll className="flex flex-col gap-6 pt-4 w-full">
         {educationData.map((education, index) => (
           <AnimateOnScroll 

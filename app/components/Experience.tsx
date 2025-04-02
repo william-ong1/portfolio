@@ -4,7 +4,7 @@ import AnimateOnScroll from './AnimateOnScroll';
 
 const Experience = (): JSX.Element => {
   return (
-    <AnimateOnScroll className="flex flex-col gap-6 pt-8 lg:pt-20">
+    <div className="flex flex-col gap-6 pt-8 lg:pt-20">
       <div className="text-2xl font-bold mt-1 uppercase"> Experience </div>
 
       <div className="rounded-2xl bg-dark-eclipse w-full lg:h-auto flex flex-col lg:flex-row p-5">
@@ -37,7 +37,7 @@ const Experience = (): JSX.Element => {
           </ul>
         </div>
       </div>
-    </AnimateOnScroll>
+    </div>
   );
 };
 

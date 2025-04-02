@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden lg:overflow-x-visible">
       <div className="mx-auto max-w-screen-xl h-screen px-4 py-12 md:px-12 md:py-20 lg:px-32 lg:py-0 fade-in font-raleway">
         <div className="lg:flex lg:justify-between lg:gap-16">
 

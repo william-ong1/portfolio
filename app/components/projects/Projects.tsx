@@ -28,7 +28,7 @@ const Projects = (): JSX.Element => {
 
   return (
     <>
-      <div className="text-2xl font-bold uppercase pt-8 lg:pt-20">Projects</div>
+      <div className="text-2xl font-bold uppercase pt-8 mt-1 lg:pt-20">Projects</div>
       <AnimateOnScroll className="flex flex-col gap-8 pt-6 w-full">
         {projects.map((project, index) => (
           <AnimateOnScroll 
