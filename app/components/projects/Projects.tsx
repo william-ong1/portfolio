@@ -8,13 +8,36 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 const Projects = (): JSX.Element => {
   const [showImages, setShowImages] = useState<boolean>(true);
 
+  useEffect(() => {
+    const storedPreference = localStorage.getItem('showProjectImages');
+    if (storedPreference !== null) {
+      setShowImages(storedPreference === 'true');
+    }
+  }, []);
+
+  const handleHideShowClick = () => {
+    const newState = !showImages;
+    setShowImages(newState);
+    localStorage.setItem('showProjectImages', newState.toString());
+  };
+
   const projects = [
+    {
+      title: "Nexus AI Chatbot",
+      description: "Scalable AI chatbot featuring autonomous learning and automatic feature evolution. Tailor it to your needs with only a few simple prompts.",
+      image: "",
+      link: "",
+      techStack: ["Python", "Model Context Protocol", "Natural Language Processing", "FastMCP"],
+      noPointer: true,
+      noImage: true,
+      isInDevelopment: true
+    },
     {
       title: "What's That Car?",
       description: "AI-powered car recognition system with 97% accuracy. Save your results, share your discoveries, and explore an ever-expanding collection of cars from around the world.",
       image: "/images/whats-that-car.png",
       link: "https://whatsthatcar.vercel.app",
-      techStack: ["Python", "TypeScript", "AWS Services", "React", "Next.js", "Tailwind", "FastAPI", "Gemini AI"]
+      techStack: ["TypeScript", "Python", "AWS Services", "React", "Next.js", "Tailwind", "FastAPI", "Gemini AI"]
     },
     {
       title: "Insight Archives",
@@ -37,7 +60,7 @@ const Projects = (): JSX.Element => {
       <div className="flex items-center gap-2 pt-10 mt-1 lg:pt-[5.25rem]">
         <div className="text-2xl font-bold uppercase"> Projects </div>
         <button 
-          onClick={() => setShowImages(!showImages)}
+          onClick={handleHideShowClick}
           className="text-gray-400 hover:text-light-blue transition-colors mt-1"
           aria-label={showImages ? "Hide project images" : "Show project images"}
         >

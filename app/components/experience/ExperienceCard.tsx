@@ -1,17 +1,14 @@
 'use client'
 
-import Image from "next/image";
-
 interface ExperienceCardProps {
   role: string;
   company: string;
   dates: string;
   description: string[];
-  logo?: any; // Next.js Image type
   link?: string;
 }
 
-const ExperienceCard = ({ role, company, dates, description, logo, link }: ExperienceCardProps): JSX.Element => {
+const ExperienceCard = ({ role, company, dates, description, link }: ExperienceCardProps): JSX.Element => {
   return (
     <div className="bg-gradient-to-b from-[#030712]/95 to-[#030712]/95 p-5 rounded-lg shadow-inner shadow-light-blue/5 transition-all duration-300 hover:scale-[1.00]">
 
@@ -36,20 +33,6 @@ const ExperienceCard = ({ role, company, dates, description, logo, link }: Exper
             </span>
           )}
         </div>
-        
-        {logo && link && (
-          <div className="flex justify-center">
-            <Image
-              className="w-12 h-4 mt-0.5 cursor-pointer"
-              src={logo}
-              alt={`${company} logo`}
-              width={100}
-              height={100}
-              priority
-              onClick={() => window.open(link, '_blank', 'noopener,noreferrer')}
-            />
-          </div>
-        )}
       </div>
       
       {/* Dates */}
@@ -59,7 +42,7 @@ const ExperienceCard = ({ role, company, dates, description, logo, link }: Exper
       
       {/* Responsibilities */}
       <div className="mt-2">
-        <ul className="list-disc text-xs text-gray-300 pl-[0.98rem] space-y-2">
+        <ul className="list-disc text-xs text-white pl-[0.98rem] space-y-2">
           {description.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
