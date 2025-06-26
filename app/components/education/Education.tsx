@@ -6,9 +6,9 @@ const Education = (): JSX.Element => {
     {
       school: "University of Washington",
       degree: "BS in Computer Science",
-      dates: "Graduating in December 2025",
-      gpa: "GPA: 3.82 / 4.0",
-      coursework: "Algorithms, Artificial Intelligence, Autonomous Robotics, Data Management, Data Structures \& Parallelism, Machine Learning, Software Design, Systems Programming",
+      dates: "Graduating in June 2026",
+      gpa: "GPA: 3.83 / 4.0",
+      coursework: "Algorithms, Artificial Intelligence, Autonomous Robotics, Data Management, Data Structures \& Parallelism, Deep Learning, Machine Learning, Software Design, Systems Programming",
       logo: "/icons/uw.svg",
     },
     {

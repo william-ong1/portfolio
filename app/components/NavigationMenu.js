@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const NavigationMenu = () => {
-  const sections = ['about', 'experience', 'projects', 'education'];
+  const sections = ['about', 'research', 'projects', 'experience', 'education'];
   const [activeSection, setActiveSection] = useState('about');
 
   const handleScroll = () => {

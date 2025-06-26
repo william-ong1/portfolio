@@ -66,7 +66,7 @@ const ProjectCard = ({ title, description, image, link, techStack, showImage = t
             <div className="text-base font-bold text-light-blue flex items-center">
               {title}
               {isInDevelopment && (
-                <span className="text-[9px] font-medium px-1.5 py-0.5 ml-2 bg-gradient-to-r from-gray-900 to-gray-800 text-light-blue/90 rounded-full border border-blue-900/20 flex items-center">
+                <span className="text-[9px] font-medium px-1.5 py-0.1 ml-2 bg-gradient-to-r from-gray-900 to-gray-800 text-light-blue/90 rounded-full border border-blue-900/20 flex items-center">
                   In Development
                 </span>
               )}
@@ -91,7 +91,7 @@ const ProjectCard = ({ title, description, image, link, techStack, showImage = t
             {techStack.map((tech, index) => (
               <span 
                 key={index} 
-                className="px-2 py-0.5 text-[10px] rounded-full bg-blue-900/40 text-blue-300 border border-blue-800/30"
+                className="px-2 py-0.5 text-[10px] rounded-full bg-blue-900/30 text-light-blue border border-light-blue/10"
               >
                 {tech}
               </span>

@@ -24,7 +24,7 @@ const Projects = (): JSX.Element => {
   const projects = [
     {
       title: "Nexus AI Chatbot",
-      description: "Scalable AI chatbot featuring autonomous learning and automatic feature evolution. Tailor it to your needs with only a few simple prompts.",
+      description: "Scalable AI chatbot with autonomous learning and automatic feature evolution. Tailor it to your needs with just a few simple prompts.",
       image: "",
       link: "",
       techStack: ["Python", "Model Context Protocol", "Natural Language Processing", "FastMCP"],

@@ -15,7 +15,7 @@ const config: Config = {
         'dark-navy': "#0b101e",
       },
       fontFamily: {
-        raleway: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+        nunito: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
       },
     },
     variants: {
