@@ -4,7 +4,7 @@ const About = (): JSX.Element => {
   return (
     <div className="flex flex-col gap-4 w-full text-white">
       <AnimateOnScroll>
-        <div className="text-2xl font-bold mt-1 uppercase pt-6 lg:pt-[5.25rem] text-light-blue"> About </div>
+        <div className="text-2xl font-bold mt-1 uppercase pt-6 lg:pt-[5.25rem]"> About </div>
       </AnimateOnScroll>
 
       <AnimateOnScroll delay={50}>
